@@ -9,8 +9,36 @@ ul {
   list-style-type: none;
   color: #434455;
 }
-
+h1,h2,h3,h4,h5,h6,ul,p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+.container {
+  max-width: 1158px;
+  margin: auto;
+}
+.about, .team, .portfolio {
+  padding: 120px 0;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid 1px #E7E9FC;
+}
+.header-nav {
+  display: flex;
+  flex-direction: row;
+}
+.nav-content {
+  display: flex;
+  flex-direction: row;
+}
 .logo {
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -23,7 +51,13 @@ ul {
 .logo-item {
 color: #2e2f42;
 }
-
+.nav-list:not(:last-child) {
+  margin-right: 40px;
+}
+.logo, .nav-list, .address-list {
+  margin-top: 24px;
+    margin-bottom: 24px;
+}
 .nav-link {
   font-size: 16px;
   font-weight: 500;
@@ -36,6 +70,10 @@ color: #2e2f42;
 .nav-link:focus {
   color: #404bbf;
 }
+.address-content {
+  display: flex;
+  flex-direction: row;
+}
 .address {
     font-style: normal;
 }
@@ -46,14 +84,28 @@ color: #2e2f42;
   letter-spacing: 0.02em;
   text-align: left;
 }
+.address-list:not(:last-child){
+  margin-right: 40px;
+}
 .address-list a:hover,
 .address-list a:focus {
   color: #404bbf;
 }
 .order {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 188px 0;
   background-color: #2e2f42;
 }
+.order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .order-title {
+  max-width: 496px;
+  margin-bottom: 48px;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -62,21 +114,36 @@ color: #2e2f42;
   color: #ffffff;
 }
 .order-button {
+  color: white;
+  background-color: #4d5ae5;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.04em;
   text-align: left;
-  color: white;
-  background-color: #4d5ae5;
+  padding: 16px 32px;
+  border-radius: 10px;
+  box-shadow: none;
 }
+
 .order-button:hover,
 .order-button:focus {
   background-color: #404bbf;
 }
 
+.about-content {
+  display: flex;
+  flex-direction: row;
+}
+.about-list {
+  flex-basis: calc((100%-72px)/4);
+}
+.about-list:not(:last-child) {
+  margin-right: 24px;
+}
 .about-title {
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -94,6 +161,14 @@ color: #2e2f42;
 .team {
   background-color: #f4f4fd;
 }
+.team-container {
+  align-items: center;
+}
+.team-content {
+  display: flex;
+  margin-top: 72px;
+  background-color: transparent;
+}
 .team-title {
   font-size: 36px;
   font-weight: 700;
@@ -104,10 +179,20 @@ color: #2e2f42;
   color: #2e2f42;
 }
 .team-list {
-    background-color: #FFFFFF
-}
+  flex-basis: calc((100%-72px)/4);
+    background-color: #FFFFFF;
+    border-radius: 4px;
+      box-shadow: 0px 1px 6px 0px #2E2F4214;
 
+}
+.team-list:not(:last-child) {
+  margin-right: 24px;
+}
+.team-list-content {
+  margin: 32px 0;
+}
 .team-name {
+  padding-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -122,6 +207,11 @@ color: #2e2f42;
   letter-spacing: 0.02em;
   text-align: center;
 }
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px;
+}
 .portfolio-title {
   font-size: 36px;
   font-weight: 700;
@@ -131,13 +221,26 @@ color: #2e2f42;
   text-transform: capitalize;
   color: #2e2f42;
 }
+.portfolio-list {
+  border: solid 1px #E7E9FC;
+}
+.portfolio-list:not(:nth-child(3n+3)){
+  margin-right: 24px;
+}
+.portfolio-list:nth-child(-1n+3) {
+  margin-bottom: 48px;
+}
 .portfolio-list-title {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
+  margin-top: 32px;
   color: #2e2f42;
+}
+.portfolio-list-content {
+  margin: 32px 0 32px 16px;
 }
 .portfolio-list-description {
   font-size: 16px;
@@ -149,9 +252,13 @@ color: #2e2f42;
 .footer {
   background-color: #2e2f42;
 }
+.footer-container {
+  padding: 100px 0;
+}
 .footer-description {
+  max-width: 264px;
+  margin-top: 16px;
   font-size: 16px;
-
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
