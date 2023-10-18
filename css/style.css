@@ -302,10 +302,9 @@ img {
 .footer .logo {
   color: #f4f4fd;
 }
-.logonav {
+
+.logo-down {
   display: inline-block;
-}
-.footer-logo {
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
