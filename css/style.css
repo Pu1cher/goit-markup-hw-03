@@ -131,7 +131,9 @@ color: #2e2f42;
 .order-button:focus {
   background-color: #404bbf;
 }
-
+.about-none {
+  visibility: hidden;
+}
 .about-content {
   display: flex;
   flex-direction: row;
