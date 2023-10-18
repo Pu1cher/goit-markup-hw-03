@@ -19,6 +19,7 @@ img {
 .container {
   max-width: 1158px;
   margin: auto;
+  padding: 0 15px
 }
 .about, .team, .portfolio {
   padding: 120px 0;
@@ -34,6 +35,7 @@ img {
 .header-nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .nav-content {
   display: flex;
