@@ -20,7 +20,7 @@ img {
   display: flex;
   max-width: 1158px;
   margin: auto;
-  padding: 0 15px
+  padding: 0 15px;
 }
 .header-container {
   display: flex;
