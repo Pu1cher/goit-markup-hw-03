@@ -23,11 +23,13 @@ img {
 .about, .team, .portfolio {
   padding: 120px 0;
 }
+.header {
+  border-bottom: 1px solid #e7e9fc
+}
 .header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: solid 1px #E7E9FC;
 }
 .header-nav {
   display: flex;
