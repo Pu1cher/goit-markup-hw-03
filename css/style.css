@@ -298,8 +298,10 @@ color: #2e2f42;
 .footer .logo {
   color: #f4f4fd;
 }
+.logonav {
+  display: inline-block;
+}
 .footer-logo {
-display: inline-block;
   margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
