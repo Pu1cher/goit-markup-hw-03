@@ -24,6 +24,7 @@ img {
   display: block;
 }
 .container {
+  display: block;
   max-width: 1158px;
   margin: auto;
   padding: 0 15px;
@@ -302,9 +303,10 @@ img {
 .footer .logo {
   color: #f4f4fd;
 }
-
-.logo-down {
+.logonav {
   display: inline-block;
+}
+.footer-logo {
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
